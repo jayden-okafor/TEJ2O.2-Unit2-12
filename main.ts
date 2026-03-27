@@ -11,6 +11,7 @@ let distanceToObject: number = 0
 
 // clear screen
 basic.clearScreen()
+basic.showIcon(IconNames.Happy)
 
 // create the led strip
 neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
@@ -48,6 +49,7 @@ input.onButtonPressed(Button.A, function () {
         neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
         neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
         neopixelStrip.show()
+        basic.showIcon(IconNames.Happy)
     } else {
         basic.showString(distanceToObject.toString() + ' cm')
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
@@ -63,5 +65,6 @@ input.onButtonPressed(Button.A, function () {
         neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
         neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
         neopixelStrip.show()
+        basic.showIcon(IconNames.Happy)
     }
 })
