@@ -14,6 +14,7 @@ distanceToObject = None
 
 # clear screen
 display.clear()
+display.show(Image.HAPPY)
 
 # turn all 4 pixels off
 neopixelStrip[0] = (0, 0, 0)
@@ -99,6 +100,7 @@ while True:
             neopixelStrip[2] = (0, 0, 0)
             neopixelStrip[3] = (0, 0, 0)
             neopixelStrip.show()
+            display.show(Image.HAPPY)
 
         else:
             display.scroll(str(distanceToObject) + " cm")
@@ -115,3 +117,4 @@ while True:
             neopixelStrip[2] = (0, 0, 0)
             neopixelStrip[3] = (0, 0, 0)
             neopixelStrip.show()
+            display.show(Image.HAPPY)
