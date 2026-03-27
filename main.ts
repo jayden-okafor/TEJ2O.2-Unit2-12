@@ -40,12 +40,28 @@ input.onButtonPressed(Button.A, function () {
         neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.show()
+
+        // wait 2 seconds then turn them off
+        basic.pause(2000)
+        neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
+        neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
+        neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+        neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+        neopixelStrip.show()
     } else {
         basic.showString(distanceToObject.toString() + ' cm')
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
         neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
         neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
         neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Green))
+        neopixelStrip.show()
+
+        // wait 2 seconds then turn them off
+        basic.pause(2000)
+        neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
+        neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
+        neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+        neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
         neopixelStrip.show()
     }
 })
