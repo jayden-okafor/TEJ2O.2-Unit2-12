@@ -101,7 +101,6 @@ while True:
             neopixelStrip[3] = (0, 0, 0)
             neopixelStrip.show()
             display.show(Image.HAPPY)
-
         else:
             display.scroll(str(distanceToObject) + " cm")
             neopixelStrip[0] = (0, 255, 0)
